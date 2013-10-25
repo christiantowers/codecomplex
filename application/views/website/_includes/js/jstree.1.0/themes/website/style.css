@@ -1,0 +1,79 @@
+/*
+ * jsTree classic theme 1.0
+ * Supported features: dots/no-dots, icons/no-icons, focused, loading
+ * Supported plugins: ui (hovered, clicked), checkbox, contextmenu, search
+ */
+
+.jstree-website a { font-weight:normal; color:#bb2017; } 
+.jstree-website a:hover { font-weight:normal; color:#dd4b39; } 
+.jstree-website li, 
+.jstree-website ins { background-image:url("d.png"); background-repeat:no-repeat; background-color:transparent; }
+.jstree-website li { background-position:-90px 0; background-repeat:repeat-y;  }
+.jstree-website li.jstree-last { background:transparent; }
+.jstree-website .jstree-open > ins { background-position:-72px 0; }
+.jstree-website .jstree-closed > ins { background-position:-54px 0; }
+.jstree-website .jstree-leaf > ins { background-position:-36px 0; }
+
+.jstree-website .jstree-hovered { background:transparent;text-decoration:underline; border:0px; padding:0 0px 0 0px; }
+.jstree-website .jstree-clicked { background:transparent; border:0px; padding:0 0px 0 0px; }
+.jstree-website a .jstree-icon { background-position:-56px -19px; }
+.jstree-website .jstree-open > a .jstree-icon { background-position:-56px -36px; }
+.jstree-website a.jstree-loading .jstree-icon { background:url("throbber.gif") center center no-repeat !important; }
+
+.jstree-website.jstree-focused { background:white; }
+
+.jstree-website .jstree-no-dots li, 
+.jstree-website .jstree-no-dots .jstree-leaf > ins { background:transparent; }
+.jstree-website .jstree-no-dots .jstree-open > ins { background-position:-18px 0; }
+.jstree-website .jstree-no-dots .jstree-closed > ins { background-position:0 0; }
+
+.jstree-website .jstree-no-icons a .jstree-icon { display:none; }
+
+.jstree-website .jstree-search { font-style:italic; }
+
+.jstree-website .jstree-no-icons .jstree-checkbox { display:inline-block; }
+.jstree-website .jstree-no-checkboxes .jstree-checkbox { display:none !important; }
+.jstree-website .jstree-checked > a > .jstree-checkbox { background-position:-38px -19px; }
+.jstree-website .jstree-unchecked > a > .jstree-checkbox { background-position:-2px -19px; }
+.jstree-website .jstree-undetermined > a > .jstree-checkbox { background-position:-20px -19px; }
+.jstree-website .jstree-checked > a > .jstree-checkbox:hover { background-position:-38px -37px; }
+.jstree-website .jstree-unchecked > a > .jstree-checkbox:hover { background-position:-2px -37px; }
+.jstree-website .jstree-undetermined > a > .jstree-checkbox:hover { background-position:-20px -37px; }
+
+#vakata-dragged.jstree-website ins { background:transparent !important; }
+#vakata-dragged.jstree-website .jstree-ok { background:url("d.png") -2px -53px no-repeat !important; }
+#vakata-dragged.jstree-website .jstree-invalid { background:url("d.png") -18px -53px no-repeat !important; }
+#jstree-marker.jstree-website { background:url("d.png") -41px -57px no-repeat !important; text-indent:-100px; }
+
+.jstree-website a.jstree-search { color:aqua; }
+.jstree-website .jstree-locked a { color:silver; cursor:default; }
+
+#vakata-contextmenu.jstree-website-context, 
+#vakata-contextmenu.jstree-website-context li ul { background:#f0f0f0; border:1px solid #979797; -moz-box-shadow: 1px 1px 2px #999; -webkit-box-shadow: 1px 1px 2px #999; box-shadow: 1px 1px 2px #999; }
+#vakata-contextmenu.jstree-website-context li { }
+#vakata-contextmenu.jstree-website-context a { color:black; }
+#vakata-contextmenu.jstree-website-context a:hover, 
+#vakata-contextmenu.jstree-website-context .vakata-hover > a { padding:0 5px; background:#e8eff7; border:1px solid #aecff7; color:black; -moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px; }
+#vakata-contextmenu.jstree-website-context li.jstree-contextmenu-disabled a, 
+#vakata-contextmenu.jstree-website-context li.jstree-contextmenu-disabled a:hover { color:silver; background:transparent; border:0; padding:1px 4px; }
+#vakata-contextmenu.jstree-website-context li.vakata-separator { background:white; border-top:1px solid #e0e0e0; margin:0; }
+#vakata-contextmenu.jstree-website-context li ul { margin-left:-4px; }
+
+/* IE6 BEGIN */
+.jstree-website li, 
+.jstree-website ins,
+#vakata-dragged.jstree-website .jstree-invalid, 
+#vakata-dragged.jstree-website .jstree-ok, 
+#jstree-marker.jstree-website { _background-image:url("d.gif"); }
+.jstree-website .jstree-open ins { _background-position:-72px 0; }
+.jstree-website .jstree-closed ins { _background-position:-54px 0; }
+.jstree-website .jstree-leaf ins { _background-position:-36px 0; }
+.jstree-website .jstree-open a ins.jstree-icon { _background-position:-56px -36px; }
+.jstree-website .jstree-closed a ins.jstree-icon { _background-position:-56px -19px; }
+.jstree-website .jstree-leaf a ins.jstree-icon { _background-position:-56px -19px; }
+#vakata-contextmenu.jstree-website-context ins { _display:none; }
+#vakata-contextmenu.jstree-website-context li { _zoom:1; }
+.jstree-website .jstree-undetermined a .jstree-checkbox { _background-position:-20px -19px; }
+.jstree-website .jstree-checked a .jstree-checkbox { _background-position:-38px -19px; }
+.jstree-website .jstree-unchecked a .jstree-checkbox { _background-position:-2px -19px; }
+/* IE6 END */
