@@ -15,11 +15,9 @@
 <td id="site-body-background">
 <?php echo load_website_header(); ?>
 <div id="site-body">
-	<div id="site-shadow-left"></div>
-	<div id="site-shadow-right"></div>
 	<div id="site-body-content">
-		<img src="<?php echo URL_IMG_WEBSITE?>/logo_404.png" style="float:left;margin:50px 20px 0 170px;width:175px;" />
-		<div class="inline top" style="margin:-203px 0 0 400px;width:450px;">
+		<img src="<?php echo URL_IMG_WEBSITE?>/404_logo2b.png" style="float:left; margin:0 0px 40px 0px; width:370px;" />
+		<div class="inline top" style="float:left; margin:0 0 0 50px; width:450px;">
 			<h1 class="font_shadow_gray"><?php echo lang('Ops!')?></h1>
 			<h2 class="font_shadow_gray"><?php echo lang('Página não encontrada.')?></h2>
 			<h5><?php echo lang('A página que você está tentando acessar não existe ou não está disponível no momento. Certifique-se que você digitou corretamente o endereço na barra do seu navegador.')?></h5>

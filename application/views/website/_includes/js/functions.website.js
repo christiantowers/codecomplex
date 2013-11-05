@@ -467,3 +467,12 @@ function download_file(url_export)
 {
 	$("body").append('<iframe src="' + url_export + '" style="display:none"></iframe>');
 }
+/**
+* submit_newsletter()
+* Envia o formulário de newsletter com o email.
+* @return void
+*/
+function submit_newsletter()
+{
+	$("form_newsletter").submit();
+}

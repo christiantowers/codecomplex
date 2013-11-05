@@ -166,7 +166,7 @@ function website_footer($url='')
 						</td>
 						<td>
 							<h5>Christian Torres</h5>	
-							<p class="text-wps" style="">CIO</p>
+							<p class="text-wps" style="">Co-fundador e CEO.</p>
 						</td>
 						</tr>
 					</table>
@@ -185,7 +185,7 @@ function website_footer($url='')
 						</td>
 						<td>
 							<h5>Leandro Antunes</h5>	
-							<p class="text-wps" style="">CTO</p>
+							<p class="text-wps" style="">Co-fundador e CTO.</p>
 						</td>
 						</tr>
 					</table>
@@ -209,9 +209,9 @@ function website_footer($url='')
 				<a href="#">http://goo.gl/eDmlR1</a>
 				
 				<div id="footer-col-img" style="">
-					<a href="https://twitter.com/acmeengine" >      <img style="margin: 5px 15px 5px 5px;   display:inline;"  src="'. URL_IMG_WEBSITE .'/share-twitter.png"></a>
-					<a href="https://www.facebook.com/codecomplex" ><img style="margin: 5px 15px 5px 15px;  display:inline;"  src="'. URL_IMG_WEBSITE .'/share-facebook.png"></a>
-					<a href="https://www.facebook.com/codecomplex" ><img style="margin: 5px 5px 5px 15px;   display:inline;"  src="'. URL_IMG_WEBSITE .'/share-googleplus.png"></a>
+					<a target="_blank" href="https://twitter.com/acmeengine" >      <img style="margin: 5px 15px 5px 5px;   display:inline;"  src="'. URL_IMG_WEBSITE .'/share-twitter.png"></a>
+					<a target="_blank" href="https://www.facebook.com/codecomplex" ><img style="margin: 5px 15px 5px 15px;  display:inline;"  src="'. URL_IMG_WEBSITE .'/share-facebook.png"></a>
+					<a target="_blank" href="https://www.facebook.com/codecomplex" ><img style="margin: 5px 5px 5px 15px;   display:inline;"  src="'. URL_IMG_WEBSITE .'/share-googleplus.png"></a>
 				</div>
 				
 			</div>
@@ -223,9 +223,12 @@ function website_footer($url='')
 				<p id="footer-text-about" style="">Especializada em aplicações web, a Code Complex é a alternativa que combina rapidez e usabilidade na construção do site ou sistema que você precisa.</p>	
 				
 				<p class="about" style="font-size:18px; margin-top: 20px;">NEWSLETTER </p>	
-				
-				<input type="text" size="30" style="background:#0a1923; border:1px solid #222932; color:#f5f5f5; " placeholder="digite seu email + enter" />
-				
+				<div>
+					<form action="javascript:ajax_save_newsletter();" id="form_newsletter" name="form_newsletter">
+						<input id="email" name="email" onkeydown="get_enter( event , \'submit_newsletter()\')" type="text" size="30" style="background:#0a1923; border:1px solid #222932; color:#f5f5f5; " placeholder="digite seu email + enter" />
+					</form>
+					<div style="text-shadow:none;display:none" class="font_11" id="form_newsletter_message"><div id="message_general_5277d9956cb34"><div style="background-color: #BED7DE;  border: 1px solid #BED7DE;" class="msg_general"><div><img src="http://www.acmeengine.org/application/views/vertigo/_includes/img/icon_success.png"><div>Feito! A partir de agora vamos encaminhar para você notícias e novidades por email. Fique atento!</div></div></div></div></div>
+				</div>
 			</div>	
 			
 			<div id="footer-col-map" style="" class="inline top">
