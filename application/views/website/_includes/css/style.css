@@ -1210,3 +1210,21 @@
 		width: 68px; 
 		height: 68px;
 	}
+	
+	
+	
+div.list-number {
+    margin: 35px 0;
+}
+div.list-number img {
+    float: left;
+    width: 40px;
+}
+div.list-number h4 {
+    color: #FFFFFF !important;
+    float: left !important;
+    margin-left: -26px !important;
+}
+div.list-number h5 {
+    padding: 6px 0 0 50px !important;
+}
